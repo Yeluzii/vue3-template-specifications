@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "lint": "eslint",
     "lint:fix": "eslint --fix --quiet",
-    "prepare": "husky"
+    "prepare": "husky",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "dependencies": {
     "vue": "^3.5.12"
