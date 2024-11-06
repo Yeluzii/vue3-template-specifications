@@ -1,0 +1,14 @@
+# 忽略 dist 文件夹中的 js 文件
+dist/**/*.js
+
+# 忽略 build 文件夹中的所有文件
+build/
+
+# 忽略特定的配置文件
+# *.config.js
+
+# 忽略 JSON 文件
+# *.json
+
+# 忽略 node_modules
+node_modules/

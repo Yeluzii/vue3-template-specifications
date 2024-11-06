@@ -1,0 +1,41 @@
+{
+  "name": "vue3-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix --quiet",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-vue": "^9.30.0",
+    "globals": "^15.12.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.13.0",
+    "vite": "^5.4.10",
+    "vue-tsc": "^2.1.8"
+  },
+  "lint-staged": {
+    "src/**/*.{js,cjs,ts,vue}": [
+      "npm run lint:fix"
+    ],
+    "src/**/*.{html,json,css,scss}": [
+      "npx prettier --write"
+    ]
+  }
+}
